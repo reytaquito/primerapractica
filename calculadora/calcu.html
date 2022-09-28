@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="content-cal container-sm">
+        
+            <div class="cont-inpt">
+               <input id="number1" type="number" value="0">
+               <input  id="number2" type="number" value="0">
+            </div>
+            <div class="cont-resul">
+                <input id="resultado" class="resultado" type="number" value="0">
+            </div>
+    
+    
+        <div class="row my-5 container-sm">
+            <div class="col">
+                <button class="btn btn-primary" id='sum' onclick="suma()">Sumar</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-secondary" id="res" onclick="resta()">Restar</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-success" id="mul" onclick="multi()">Multiplicar</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-danger" id="div" onclick="div()">Dividir</button>
+            </div>
+        </div>
+    </div>
+   
+    <script src="./function.js"></script>
+</body>
+</html>
